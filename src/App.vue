@@ -52,7 +52,7 @@
                 <v-btn style="flex:1;text-transform:none" class="font-7 mr-2" x-small text plain>Blog</v-btn>
             </div>
       </v-row>
-       <v-row no-gutters style="" class="footer d-flex d-sm-none">
+       <v-row no-gutters style="width:100%" class="footer d-flex d-sm-none">
            
             <v-spacer></v-spacer>
             <div>
@@ -64,6 +64,7 @@
             </div>
              <p class="font-7 text-center">© 2022 Treloo LLC - All right reserved.</p>
             </div>
+            <v-spacer></v-spacer>
       </v-row>
      </v-container>
     </v-footer>
