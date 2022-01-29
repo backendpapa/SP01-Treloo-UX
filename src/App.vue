@@ -1,41 +1,29 @@
 <template>
   <v-app>
-    <!-- <v-app-bar
-      app
-      color="primary"
+    <v-app-bar
+      :color="color"
+     
+      class=""
+      fixed
+      style="padding:0 5%"
       dark
+      flat
     >
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+     <p class="font-2 mb-n1" :style="`color:${colo}`">Treloo</p>
       </div>
 
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar> -->
+     <div class="d-none d-sm-flex">
+       <div class="d-flex align-center">
+        <v-btn style="text-transform:none" class="font-7" text plain>Review</v-btn>
+      <v-btn style="text-transform:none" class="font-7" text plain>Tips</v-btn>
+      <v-btn style="text-transform:none" class="font-7" text plain>Alerts</v-btn>
+      <v-btn style="text-transform:none" large class="font-7 white blue--text"  >Blog</v-btn>
+     </div>
+     </div>
+     <v-app-bar-nav-icon class="d-flex d-sm-none"/>
+    </v-app-bar>
 
     <v-main>
       <router-view/>
@@ -78,7 +66,24 @@ export default {
 
   data: () => ({
     //
+    color: "transparent",
+    colo: "white",
   }),
+  mounted() {
+    const navbar = document.getElementById("nav-bar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        this.color = "whitesmoke";
+        this.colo = "grey";
+        navbar.classList.add("scale-in-center");
+      } else {
+        this.color = "transparent";
+        this.colo = "white";
+        navbar.classList.remove("scale-in-center");
+        navbar.classList.add("scale-out-center");
+      }
+    });
+  },
 };
 </script>
 <style>
