@@ -22,6 +22,18 @@ Figma UI link @ [link](https://www.figma.com/community/file/1067291706100571818)
 - [ ] Full function app planning:** On Hold 
 
 
+### Fulfil my dream
+
+I always want to develop new UI's with various frontend framework and tools day in day out. only your support can give me the time and space to keep developing nice content.
+
+i have a plan of creating an opensource marketplace on my site for people to download quality frontend UI from web to mobile to desktop.
+support my dream by buying me a coffee
+
+BNB(coin): bnb1eams6jneauszx9g2zw586ye98zpadwssmg0hjk
+
+SOLANA(coin): HhzKZ2LLkFwgzWw5e5VvfJkC7XVJZFkPqkw6GUgZmv74
+
+send me a mail to papabackend@gmail.com so i can add to the sponsors list. Thanks for making my dream come through.
 
 
 
@@ -36,4 +48,6 @@ Figma UI link @ [link](https://www.figma.com/community/file/1067291706100571818)
 
 ### Lints and fixes files
 <code>npm lint</code>
+
+
 
