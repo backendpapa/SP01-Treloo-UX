@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="animate__animated animate__fadeIn animate__slow">
     <v-app-bar
       :color="color"
      
