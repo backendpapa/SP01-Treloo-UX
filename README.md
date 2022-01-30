@@ -16,13 +16,17 @@ Figma UI link @ [link](https://www.figma.com/community/file/1067291706100571818)
 
 ## Task to do
 
-- [ ] Add navigation( both desktop and mobile)
-- [ ] Add animation effect
-- [ ] Modify component height and width sizes(move from vh to px)
+- [x] Add navigation( both desktop and mobile)
+- [x] Add animation effect
+
+### v2 Update task
+- [ ] Handle screen for sm md xl and lg(1600,1800,1900)px's
+- [ ] Add custom animation effect
+- [ ] Modify component height and width sizes(move from vh to em)
 - [ ] Full function app planning:** On Hold 
 
 
-### Fulfil my dream
+## Fulfil my dream
 
 I always want to develop new UI's with various frontend framework and tools day in day out. only your support can give me the time and space to keep developing nice content.
 
