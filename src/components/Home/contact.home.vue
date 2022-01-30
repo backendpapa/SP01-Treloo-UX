@@ -62,7 +62,7 @@ export default {
     top:75%;
     left: -5%;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .contact-container{
         padding: 10%;
     }

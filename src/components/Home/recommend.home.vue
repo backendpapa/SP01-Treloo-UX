@@ -62,9 +62,9 @@ export default {
     height: 8vh;
     border-radius: 13px;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .recommend-container{
-    padding:10%;
+    padding:12%;
 }
 }
 </style>

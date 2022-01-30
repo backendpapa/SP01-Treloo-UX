@@ -49,7 +49,7 @@ props:['img']
     right:10%;
 }
 
-@media screen  and (max-width:500px) {
+@media screen  and (max-width:600px) {
     .card-rc{
     height: 40vh;
     border-radius: 35px !important;

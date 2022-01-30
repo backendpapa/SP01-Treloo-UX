@@ -94,7 +94,7 @@ export default {
     padding:10%
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .ts-container{
         padding:10%;
         padding-top: 40% ;

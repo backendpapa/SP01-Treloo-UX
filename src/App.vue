@@ -30,17 +30,19 @@
     </v-main>
     <v-footer class="bg-1 ">
      <v-container>
-        <v-row no-gutters style="" class="footer d-none d-sm-flex">
+       <div class="d-sm-none d-md-flex">
+          <v-row no-gutters style="" class="footer d-none d-sm-flex ">
             <p class="font-7">© 2022 Treloo LLC - All right reserved.</p>
             <v-spacer></v-spacer>
-            <div style="display:flex">
+            <div class="jst" style="display:flex">
                 <v-btn style="flex:1;text-transform:none" class="font-7 mr-2" x-small text plain>Review</v-btn>
                 <v-btn style="flex:1;text-transform:none" class="font-7 mr-2" x-small text plain>Tips</v-btn>
                 <v-btn style="flex:1;text-transform:none" class="font-7 mr-2" x-small text plain>Alerts</v-btn>
                 <v-btn style="flex:1;text-transform:none" class="font-7 mr-2" x-small text plain>Blog</v-btn>
             </div>
       </v-row>
-       <v-row no-gutters style="width:100%" class="footer d-flex d-sm-none">
+       </div>
+       <v-row no-gutters style="width:100%" class="footer d-flex d-sm-none d-none d-sm-flex d-md-none">
            
             <v-spacer></v-spacer>
             <div>
@@ -90,9 +92,10 @@ export default {
 .footer{
   padding:4%;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
  .footer{
   padding:10%;
-}   
+} 
+
 }
 </style>

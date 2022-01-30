@@ -3,7 +3,7 @@
 
   <div class="sh-container">
      
-          <v-row no-gutters style="" class="d-flex d-sm-none">
+          <v-row no-gutters style="" class="d-flex d-sm-none d-none d-sm-flex d-md-none">
               <v-spacer></v-spacer>
                <div  style="height:100px;width:250px;border-radius:35px;justify-content:center;align-items:center;display:flex"  class="white pa-4 ">
                <div>
@@ -132,10 +132,10 @@ export default {
     top:-15%;
     width:100%;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .sh-container{
     position:absolute;
-    top:-4%;
+    top:-3em;
     width: 90% !important;
     
 } 
@@ -143,5 +143,6 @@ export default {
     display: none !important;
 }  
 }
+
 
 </style>

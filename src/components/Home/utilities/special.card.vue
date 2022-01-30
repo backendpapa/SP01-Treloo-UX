@@ -59,7 +59,7 @@ export default {
   writing-mode: vertical-rl;
   letter-spacing: 7px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .card {
     height: 50vh;
     border-radius: 45px !important;

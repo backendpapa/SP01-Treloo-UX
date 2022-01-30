@@ -40,7 +40,7 @@
   text-align: center;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
   .hero{
   height :120vh;
   background: url('../../assets/images/hero.png');

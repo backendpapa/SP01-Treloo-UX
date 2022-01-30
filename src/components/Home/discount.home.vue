@@ -38,7 +38,7 @@ export default {
         height: 100%;
         /* background:url('');background-size:cover */
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .ds-container{
     padding: 10%;
 }
