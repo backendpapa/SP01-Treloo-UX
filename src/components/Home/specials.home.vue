@@ -1,10 +1,31 @@
 <template>
-  <div class=" sp-container" >
+  <div style="position:relative;" class=" sp-container" >
 
-     <div>
-         <!-- container for flight and hotel components -->
-     </div>
-     <div>
+  <div class="sh-container">
+     
+          <v-row no-gutters style="" class="d-flex d-sm-none">
+              <v-spacer></v-spacer>
+               <div  style="height:100px;width:250px;border-radius:35px;justify-content:center;align-items:center;display:flex"  class="white pa-4 ">
+               <div>
+                   <v-btn v-if="sw==1" @click="sw=1" large   style="text-transform:none" rounded elevation="0" class="blue mr-1 lighten-5 font-7 weight-600"><v-icon color="blue" size="18">mdi-airplane-takeoff</v-icon>Flight</v-btn>
+                   <v-btn v-else large @click="sw=1"  text  style="text-transform:none"  rounded elevation="0" color="black" class=" font-7 weight-600"><v-icon color="blue" size="18">mdi-airplane-takeoff</v-icon>Flight</v-btn>
+               </div>
+              <div>
+                   <v-btn v-if="sw==2" @click="sw=2" large  color="blue lighten-5"  style="text-transform:none" rounded elevation="0" class="font-7 weight-600"><v-icon color="blue" size="18">mdi-home</v-icon>Flight</v-btn>
+                   <v-btn v-else @click="sw=2" large text color="black"  style="text-transform:none" rounded elevation="0" class="font-7 weight-600"><v-icon color="blue" size="18">mdi-home</v-icon>Flight</v-btn>
+              </div>
+           </div>
+           <v-spacer></v-spacer>
+          </v-row>
+     
+       <v-container class="hide-xs" >
+       
+          
+            <searchSpecialHomeVue />
+      
+   </v-container>
+  </div>
+     <div style="margin-top:20%">
          <!-- container for the upcoming specials -->
          <p class="font-2 weight-600 text-center">Special Upcoming Offers</p>   
          <br>
@@ -43,6 +64,7 @@
 </template>
 
 <script>
+import searchSpecialHomeVue from './search.special.home.vue'
 import specialCardVue from './utilities/special.card.vue'
 import specialTabVue from './utilities/special.tab.vue'
 
@@ -75,7 +97,8 @@ export default {
                 team:1,
                 couple:2,
                 family:3
-            }
+            },
+            sw:1
 
         }
     },
@@ -86,7 +109,8 @@ export default {
     },
     components:{
         specialTabVue,
-        specialCardVue
+        specialCardVue,
+        searchSpecialHomeVue
     }
 
 }
@@ -102,6 +126,22 @@ export default {
     background:#FFFFFF;
     height: 8vh;
     border-radius: 13px;
+}
+.sh-container{
+    position:absolute;
+    top:-15%;
+    width:100%;
+}
+@media screen and (max-width:500px) {
+    .sh-container{
+    position:absolute;
+    top:-5%;
+    width: 90% !important;
+    
+} 
+.hide-xs{
+    display: none !important;
+}  
 }
 
 </style>
