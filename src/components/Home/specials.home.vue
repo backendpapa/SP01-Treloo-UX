@@ -135,7 +135,7 @@ export default {
 @media screen and (max-width:500px) {
     .sh-container{
     position:absolute;
-    top:-5%;
+    top:-4%;
     width: 90% !important;
     
 } 
