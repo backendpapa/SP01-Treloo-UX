@@ -69,7 +69,7 @@ export default {
   data: () => ({
     //
     color: "transparent",
-    colo: "white",
+    color: "white",
   }),
   mounted() {
     const navbar = document.getElementById("nav-bar");
